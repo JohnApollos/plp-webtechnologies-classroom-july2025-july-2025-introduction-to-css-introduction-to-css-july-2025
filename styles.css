@@ -1,0 +1,104 @@
+/* styles.css */
+/* This is an external stylesheet. All of our CSS rules are defined here.
+    This keeps the styling separate from the HTML structure,
+    making the code cleaner and easier to manage.
+*/
+
+/*
+    GLOBAL STYLES:
+    These rules apply to the entire body of the document.
+*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0; /* Top/bottom padding of 20px, left/right padding of 0 */
+    text-align: center;
+    border-bottom: 5px solid #007bff;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px; /* Adds a small space below the main heading */
+}
+
+main {
+    max-width: 960px;
+    margin: 20px auto; /* Centers the main content area */
+    padding: 0 20px; /* Adds padding to the sides */
+}
+
+/*
+    BOX MODEL DEMONSTRATION:
+    These classes are specifically for showcasing the Box Model.
+*/
+.card {
+    background: #fff;
+    border: 1px solid #ddd; /* A thin border around the card */
+    padding: 20px; /* Space between the content and the border */
+    margin-bottom: 20px; /* Space between this card and the next element */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+.box-model-demo {
+    background-color: #e2f0f9;
+    padding: 15px;
+    border: 2px dashed #007bff; /* A dashed border to visually contain the examples */
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.box-model-example {
+    background-color: #cce7ff;
+    border: 5px solid #004085; /* A thick, solid border */
+    padding: 25px; /* Adds generous internal spacing */
+    margin: 20px; /* Pushes other elements away by 20px on all sides */
+    text-align: center;
+    border-radius: 5px;
+}
+
+/*
+    ELEMENT STYLING:
+*/
+p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px; /* Adds space above the button container */
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 25px; /* Generous padding to make the button bigger */
+    border-radius: 5px;
+    display: inline-block; /* Allows padding and margin to be applied */
+    border: 2px solid transparent; /* A transparent border for hover effect */
+}
+
+.button:hover {
+    background-color: #0056b3;
+    border-color: #fff; /* A visual change on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #666;
+    font-size: 0.9em;
+    border-top: 1px solid #ddd;
+}
